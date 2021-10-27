@@ -1,3 +1,4 @@
+import {MdDeleteForever} from 'react-icons/md';
 
 
 const Todo =(props)=>{
@@ -21,11 +22,11 @@ const Todo =(props)=>{
         <li className="list-group">
         <label className="todo">
             <p className="para">{props.todo}</p>
-            <input  type="checkbox"
+            <input  type="checkbox" className="checkbox"
             checked = {props.check}
             onChange= {handleChange}/>
             
-            <button  className="btn " ><i className="fa fa-trash para2" onClick={handleDel}></i></button>
+            <MdDeleteForever size={30} style={{color:'red'}} onClick={handleDel}/>
 
         </label></li>
         </ul>

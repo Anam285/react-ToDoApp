@@ -44,10 +44,12 @@
 
 }
 .forms{
+  display: flex;
   
   background-color: green;
+  align-items: center ;
   text-align: center;
-  /* justify-content:flex-end; */
+  justify-content:center;
 }
 .textbox{
   /* display: flex; */
@@ -56,4 +58,9 @@
   /* align-self:center; */
   margin: 25px;
 
+}
+
+.checkbox{
+  width: 25px;
+  height: 25px;
 }

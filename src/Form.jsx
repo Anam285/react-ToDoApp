@@ -1,3 +1,4 @@
+import {MdAddBox } from 'react-icons/md';
 
 import {useState} from "react"
 const Form =(props)=>{
@@ -17,7 +18,7 @@ const Form =(props)=>{
     return(
         <form className= "forms" onSubmit={handleSubmit}>
             <input className= "textbox" type="text" value={userInput} onChange={(e)=>setUserInput(e.target.value)}/>
-            <button type="submit" onclick={handleSubmit}>Add</button>
+            <MdAddBox type="submit" size = {60} onClick={handleSubmit}/>
         </form>
     )
 }
